@@ -1,0 +1,26 @@
+﻿depth,maxStipeLen,Locality,lat,lon,country,year,age,citation,method
+5,1395.5,Finmark,70.731,27.6235,Norway,1985,18,"(Sjøtun et al., 1993; Rinde & Sjøtun, 2005)",Graph digitizer
+3,1410,Langley,65.394307,-22.98533,Iceland,1977,12,"(Gunnarsson, 1991)",Graph digitizer
+3,1226.4,Oddbjarnarsker,65.326748,-23.09245,Iceland,1978,10,"(Gunnarsson, 1991)",Graph digitizer
+4.5,1900,"Station 107B,  ",63.977916,9.762678,Norway,1999,9,"(Sjøtun et al., 2000)",In text
+6,1180,Molde Archipelago ,62.816667,6.4,Norway,2006,7,"(Pedersen et al., 2012)",In text
+5,2060,Finnøy archipelago,59.132341,5.76431,Norway,2008,8,"(Bekkby et al., 2014)",In text
+3,1465,Warbeth Bay,58.9577,-3.3377,Britain,2014-2015,6,"(Smale et al., 2016)",Raw data
+3,1830,Arisaig,56.949587,-5.863207,Britain,1969-1970,9,"(Jupp & Drew, 1974)",In text
+4.6,1576,Soa Island (East),56.56741,-6.625631,Britain,1967-1968,7,"(John, 1968)",In text
+4,1500,Connel Sound,56.457977,-5.418204,Britain,1976,9,"(Kain, 1977)",In text
+5,1620.5,Dubh Sgeir,56.3661,-5.6213,Britain,2014-2015,11,"(Smale et al., 2016)",Raw data
+6,1300,Pettico Wick,55.915161,-2.150308,Britain,1968,8,"(Whittock, 1969)",In text
+3,1090,Beadnell-Lady's Hole,55.553219,-1.623398,Britain,1967-1968,7,"(John, 1968)",In text
+3.6,846,Saddal Bay,55.455736,-5.501283,Britain,1967-1968,7,"(John, 1968)",In text
+2,1400,Marsden - Byer's Hole,54.977398,-1.372082,Britain,1967-1968,7,"(John, 1968)",In text
+4.2,1800,Redcar - Salt Scar,54.618789,-1.044643,Britain,1967-1968,7,"(John, 1968)",In text
+2,1050,"Forest 2, Port Erin",54.09025,-4.777385,Britain,1959,7,"(Kain, 1963)",Graph digitizer
+3.6,920,Cardigan Island,52.131861,-4.689214,Britain,1967-1968,7,"(John, 1968)",In text
+4,660.8,Mill Haven,51.7681,-5.1683,Britain,2014-2015,7,"(Smale et al., 2016)",Raw data
+5,1090,Dunmanus Bay,51.58333,-9.75,Ireland,1968,7,"(Whittock, 1969)",In text
+3,610,Carrigathorna,51.489439,-9.292027,Ireland,1972,6,"(Norton et al., 1977)",In text
+4,960,NW Mewstone,50.308,-4.1083,Britain,2014-2015,9,"(Smale et al., 2016)",Raw data
+3,830,Sennen Cove,50.083333,-5.416667,Britain,1967,7,"(Whittock, 1969)",In text
+6,898.6,Port Levi,49.69997,-1.476134,France,1975-1976,9,"(Sheppard et al., 1978)",Graph digitizer
+6,577,A Coruña,43.365,-8.41,Spain,2013,7,"Franco, Tuya & Wernberg unpubl. data",Raw data

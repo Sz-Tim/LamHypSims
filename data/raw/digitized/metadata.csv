@@ -1,0 +1,95 @@
+﻿reference,genus,species,location,habitat,depth,age,date,unit_x,unit_y
+Kain1963_fig16a,Laminaria,hyperborea,Creg Liauyr,limit,5,1,1962-Apr,g,g
+Kain1963_fig16b,Laminaria,hyperborea,Spanish Head,limit,10,1,1962-Apr,g,g
+Kain1963_fig16c,Laminaria,hyperborea,Creg Liauyr,limit,5,2,1960-May,g,g
+Kain1963_fig16d,Laminaria,hyperborea,Spanish Head,limit,10,2,1960-May,g,g
+Kain1963_fig16e,Laminaria,hyperborea,Creg Liauyr,limit,5,4,1962-Apr,g,g
+Kain1963_fig16f,Laminaria,hyperborea,Spanish Head,limit,10,4,1962-Apr,g,g
+Kain1963_fig6a,Laminaria,hyperborea,Creg Liauyr,forest,2,,,,kg/(0.5m)^2
+Kain1963_fig6b,Laminaria,hyperborea,Spanish Head,forest,5,,,,kg/(0.5m)^2
+Kain1963_fig6c,Laminaria,hyperborea,Creg Liauyr,limit,5,,,,kg/(0.5m)^2
+Kain1963_fig6d,Laminaria,hyperborea,Spanish Head,limit,10,,,,kg/(0.5m)^2
+Kain1963_fig6e,Laminaria,hyperborea,SW Longa,tbd,7,,,,kg/(0.5m)^2
+Kain1963_fig7,Laminaria,hyperborea,Creg Liauyr,forest,2,,,yr,g
+Kain1963_fig8,Laminaria,hyperborea,Spanish Head,limit,10,,,yr,g
+Kain1963_fig13,Laminaria,hyperborea,Creg Liauyr,forest,2,,,mm,g
+Kain1963_fig15a,Laminaria,hyperborea,Creg Liauyr,forest,2,1,1962-Apr,g,g
+Kain1963_fig15b,Laminaria,hyperborea,Creg Liauyr,forest,2,2,1962-Apr,g,g
+Kain1963_fig14a,Laminaria,hyperborea,Creg Liauyr,forest,2,,,mm,proportion
+Kain1963_fig14b,Laminaria,hyperborea,Creg Liauyr,forest,2,,,mm,proportion
+Kain1963_fig14c,Laminaria,hyperborea,Creg Liauyr,limit,5,,,mm,proportion
+Kain1963_fig14d,Laminaria,hyperborea,SW Longa,tbd,7,,,mm,proportion
+Kain1976a_fig8,Laminaria,hyperborea,Port Erin,clearing,,,,day,mm/week
+Kain1976a_fig10,Laminaria,hyperborea,Port Erin,clearing,,,,ageGroup,KeL
+Kain1976a_fig11,Laminaria,hyperborea,Port Erin,clearing,0.8,,,day,mm/week
+Kain1976a_fig7a,Laminaria,hyperborea,Port Erin,clearing,,0.623287671,,g,g
+Kain1976a_fig7b,Laminaria,hyperborea,Port Erin,clearing,,1.361643836,,g,g
+Kain1976a_fig7c,Laminaria,hyperborea,Port Erin,clearing,,2.780821918,,g,g
+Kain1976a_fig7d,Laminaria,hyperborea,Port Erin,clearing,,3.816438356,,g,g
+Kain1976a_fig7e,Laminaria,hyperborea,Port Erin,clearing,,4.72739726,,g,g
+Kain1976a_fig1a,Laminaria,hyperborea,Port Erin,clearing - Nov,0.8,,,day,g
+Kain1976a_fig1b,Laminaria,hyperborea,Port Erin,clearing - Feb,0.8,,,day,g
+Kain1976a_fig1c,Laminaria,hyperborea,Port Erin,clearing - Jun,0.8,,,day,g
+Kain1976a_fig1d,Laminaria,hyperborea,Port Erin,clearing - Aug,0.8,,,day,g
+Kain1976a_fig2a,Laminaria,hyperborea,Port Erin,clearing - Nov,4.4,,,day,g
+Kain1976a_fig2b,Laminaria,hyperborea,Port Erin,clearing - Feb,4.4,,,day,g
+Kain1976a_fig2c,Laminaria,hyperborea,Port Erin,clearing - Jun,4.4,,,day,g
+Kain1976a_fig2d,Laminaria,hyperborea,Port Erin,clearing - Aug,4.4,,,day,g
+Kain1976a_fig2e,Laminaria,hyperborea,Port Erin,clearing - Nov,0.8,,,day,g
+Kain1976a_fig2f,Laminaria,hyperborea,Port Erin,clearing - Feb,0.8,,,day,g
+Kain1976a_fig2g,Laminaria,hyperborea,Port Erin,clearing - Jun,0.8,,,day,g
+Kain1976a_fig13a,Laminaria,hyperborea,Isle of Man,clearing,0.8,1,,day,cm^2
+Kain1976a_fig13b,Laminaria,hyperborea,Isle of Man,clearing,0.8,2,,day,cm^2
+Kain1976a_fig13c,Laminaria,hyperborea,Isle of Man,clearing,0.8,3,,day,cm^2
+Kain1976a_fig13d,Laminaria,hyperborea,Helgoland,clearing,2.2,2,,day,cm^2
+Kain1976a_fig13e,Laminaria,hyperborea,Helgoland,clearing,2.2,3,,day,cm^2
+Kain1976a_fig13f,Laminaria,hyperborea,Helgoland,clearing,2.2,4,,day,cm^2
+Kain1976a_fig18a,Laminaria,hyperborea,,clearing - Nov,0.8,,,day,FAI
+Kain1976a_fig18b,Laminaria,hyperborea,,clearing - Feb,0.8,,,day,FAI
+Kain1976a_fig18c,Laminaria,hyperborea,,clearing - Jun,0.8,,,day,FAI
+Kain1976a_fig18d,Laminaria,hyperborea,,clearing - Aug,0.8,,,day,FAI
+Kain1976a_fig17a,Laminaria,hyperborea,Port Erin,clearing,0.8,0,,mm,N/m^2
+Kain1976a_fig17b,Laminaria,hyperborea,Port Erin,clearing,0.8,1,,mm,N/m^2
+Kain1976a_fig17c,Laminaria,hyperborea,Port Erin,clearing,0.8,2,,mm,N/m^2
+Kain1976a_fig17d,Laminaria,hyperborea,Port Erin,clearing,0.8,3,,mm,N/m^2
+Kain1976a_fig17e,Laminaria,hyperborea,Port Erin,clearing,0.8,4,,mm,N/m^2
+Kain1976a_fig17f,Laminaria,hyperborea,Port Erin,forest,0.8,,,mm,N/m^2
+Kain1976a_fig17g,Laminaria,hyperborea,Norway,clearing,5,1,,mm,N/m^2
+Kain1976a_fig17h,Laminaria,hyperborea,Norway,clearing,8.5,2,,mm,N/m^2
+Kain1976a_fig17i,Laminaria,hyperborea,Norway,clearing,9,3,,mm,N/m^2
+Kain1976a_fig17j,Laminaria,hyperborea,Norway,forest,5,,,mm,N/m^2
+Kain1977_fig6a,Laminaria,hyperborea,SE Muldoanich,,,,,m,FAI
+Kain1977_fig6b,Laminaria,hyperborea,Kallow Point,,,,,m,FAI
+Kain1977_fig6c,Laminaria,hyperborea,Port Erin,,,,,m,FAI
+Kain1977_fig6d,Laminaria,hyperborea,Spanish Head,,,,,m,FAI
+Kain1977_fig6e,Laminaria,hyperborea,Cuan Sound,,,,,m,FAI
+Kain1977_fig6f,Laminaria,hyperborea,Connel Sound,,,,,m,FAI
+Kain1977_fig6g,Laminaria,hyperborea,NE Muldoanich,,,,,m,FAI
+Kain1977_fig6h,Laminaria,hyperborea,McKenzie Rock,,,,,m,FAI
+Kain1977_fig7,Laminaria,hyperborea,SE Muldoanich,,4,,,g,cm^2
+Kain1977_fig8a,Laminaria,hyperborea,SE Muldoanich,,,,,m,beta
+Kain1977_fig8b,Laminaria,hyperborea,NE Muldoanich,,,,,m,beta
+Kain1977_fig8c,Laminaria,hyperborea,McKenzie Rock,,,,,m,beta
+Kain1977_fig8d,Laminaria,hyperborea,Loch Eatharna,,,,,m,beta
+Kain1977_fig9a,Laminaria,hyperborea,SE Muldoanich,,19,,,g,cm^2
+Kain1977_fig9b,Laminaria,hyperborea,McKenzie Rock,,18,,,g,cm^2
+Kain1977_fig12a,Laminaria,hyperborea,SE Muldoanich,,4,,,mm,N/m^2
+Kain1977_fig12b,Laminaria,hyperborea,SE Muldoanich,,6.5,,,mm,N/m^2
+Kain1977_fig12c,Laminaria,hyperborea,SE Muldoanich,,9,,,mm,N/m^2
+Kain1977_fig12d,Laminaria,hyperborea,SE Muldoanich,,14,,,mm,N/m^2
+Kain1977_fig12e,Laminaria,hyperborea,SE Muldoanich,,19,,,mm,N/m^2
+Kain1977_fig12f,Laminaria,hyperborea,SE Muldoanich,,20,,,mm,N/m^2
+Kain1977_fig12g,Laminaria,hyperborea,SE Muldoanich,,24,,,mm,N/m^2
+Kain1977_fig13a,Laminaria,hyperborea,Kallow Point,,2,,,mm,N/m^2
+Kain1977_fig13b,Laminaria,hyperborea,Connel Sound,,4,,,mm,N/m^2
+Kain1977_fig13c,Laminaria,hyperborea,Connel Sound,,6,,,mm,N/m^2
+Kain1977_fig13d,Laminaria,hyperborea,Cuan Sound,,7,,,mm,N/m^2
+Kain1977_fig13e,Laminaria,hyperborea,NE Muldoanich,,9,,,mm,N/m^2
+Kain1977_fig13f,Laminaria,hyperborea,McKenzie Rock,,13.5,,,mm,N/m^2
+Kain1977_fig13g,Laminaria,hyperborea,McKenzie Rock,,18,,,mm,N/m^2
+Kain1977_fig13h,Laminaria,hyperborea,Griean Head,,18,,,mm,N/m^2
+Pedersen2012_fig5,Laminaria,hyperborea,Molde,,6,,,stage,stage
+Kain1977_table2a,Laminaria,hyperborea,SE Muldoanich,,,,,g,cm^2
+Kain1977_table2b,Laminaria,hyperborea,NE Muldoanich,,,,,g,cm^2
+Kain1977_table2c,Laminaria,hyperborea,McKenzie Rock,,,,,g,cm^2
+Kain1977_table2d,Laminaria,hyperborea,Loch Eatharna,,,,,g,cm^2

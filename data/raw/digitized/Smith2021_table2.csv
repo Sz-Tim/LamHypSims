@@ -1,0 +1,65 @@
+﻿depth,metric,mean,location,se,scale
+2,temp summer,12.3,N Scotland (A),,HOBO
+5,temp summer,12.28,N Scotland (A),,HOBO
+10,temp summer,12.3,N Scotland (A),,HOBO
+15,temp summer,12.22,N Scotland (A),,HOBO
+2,temp summer,,W Scotland (B),,HOBO
+5,temp summer,12.49,W Scotland (B),,HOBO
+10,temp summer,12.51,W Scotland (B),,HOBO
+15,temp summer,12.5,W Scotland (B),,HOBO
+2,temp summer,,SW Wales (C),,HOBO
+5,temp summer,14.95,SW Wales (C),,HOBO
+10,temp summer,14.91,SW Wales (C),,HOBO
+15,temp summer,14.89,SW Wales (C),,HOBO
+2,temp summer,15.13,SW England (D),,HOBO
+5,temp summer,15.22,SW England (D),,HOBO
+10,temp summer,15.06,SW England (D),,HOBO
+15,temp summer,14.94,SW England (D),,HOBO
+2,light intensity,5493,N Scotland (A),,HOBO
+5,light intensity,4353,N Scotland (A),,HOBO
+10,light intensity,1822,N Scotland (A),,HOBO
+15,light intensity,966.9,N Scotland (A),,HOBO
+2,light intensity,3594,W Scotland (B),,HOBO
+5,light intensity,2876,W Scotland (B),,HOBO
+10,light intensity,768.7,W Scotland (B),,HOBO
+15,light intensity,356.9,W Scotland (B),,HOBO
+2,light intensity,2209,SW Wales (C),,HOBO
+5,light intensity,1799,SW Wales (C),,HOBO
+10,light intensity,504.7,SW Wales (C),,HOBO
+15,light intensity,161.5,SW Wales (C),,HOBO
+2,light intensity,5213,SW England (D),,HOBO
+5,light intensity,4071,SW England (D),,HOBO
+10,light intensity,1696,SW England (D),,HOBO
+15,light intensity,780.1,SW England (D),,HOBO
+2,PAR,4.156,N Scotland (A),,HOBO
+5,PAR,3.431,N Scotland (A),,HOBO
+10,PAR,1.764,N Scotland (A),,HOBO
+15,PAR,0.967,N Scotland (A),,HOBO
+2,PAR,2.763,W Scotland (B),,HOBO
+5,PAR,2.149,W Scotland (B),,HOBO
+10,PAR,0.633,W Scotland (B),,HOBO
+15,PAR,0.303,W Scotland (B),,HOBO
+2,PAR,1.733,SW Wales (C),,HOBO
+5,PAR,1.367,SW Wales (C),,HOBO
+10,PAR,0.429,SW Wales (C),,HOBO
+15,PAR,0.141,SW Wales (C),,HOBO
+2,PAR,3.956,SW England (D),,HOBO
+5,PAR,2.978,SW England (D),,HOBO
+10,PAR,1.336,SW England (D),,HOBO
+15,PAR,0.641,SW England (D),,HOBO
+2,irradience pct surface,9.16,N Scotland (A),,HOBO
+5,irradience pct surface,7.09,N Scotland (A),,HOBO
+10,irradience pct surface,2.88,N Scotland (A),,HOBO
+15,irradience pct surface,1.53,N Scotland (A),,HOBO
+2,irradience pct surface,6.41,W Scotland (B),,HOBO
+5,irradience pct surface,4.99,W Scotland (B),,HOBO
+10,irradience pct surface,1.3,W Scotland (B),,HOBO
+15,irradience pct surface,0.6,W Scotland (B),,HOBO
+2,irradience pct surface,3.4,SW Wales (C),,HOBO
+5,irradience pct surface,2.67,SW Wales (C),,HOBO
+10,irradience pct surface,0.74,SW Wales (C),,HOBO
+15,irradience pct surface,0.23,SW Wales (C),,HOBO
+2,irradience pct surface,6.9,SW England (D),,HOBO
+5,irradience pct surface,5.33,SW England (D),,HOBO
+10,irradience pct surface,2.22,SW England (D),,HOBO
+15,irradience pct surface,1.01,SW England (D),,HOBO
