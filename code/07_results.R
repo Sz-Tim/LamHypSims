@@ -55,11 +55,14 @@ sites.sf <- bind_rows(
   st_as_sf(coords=c("lon", "lat"), crs=4326)
 
 # plot themes, etc
-pub_theme <- theme(axis.title=element_text(size=11),
-                   axis.text=element_text(size=9),
-                   legend.title=element_text(size=10),
+pub_theme <- theme(axis.title=element_text(size=9),
+                   axis.text=element_text(size=8),
+                   legend.title=element_text(size=9),
                    legend.text=element_text(size=8),
-                   strip.text=element_text(size=11))
+                   strip.text=element_text(size=9),
+                   strip.background=element_rect(linewidth=0.4),
+                   axis.line=element_line(linewidth=0.3),
+                   axis.ticks=element_line(linewidth=0.25))
 map_base.gg <- ggplot() +
   theme(legend.position="bottom", 
         panel.grid=element_blank(),
@@ -84,8 +87,8 @@ b.df_biomass <- readRDS("out/processed/b_lagEffects_biomass.rds")
 ri.df <- read_csv(glue("{sens.dir}{sep}RelInf_0.1.csv")) %>%
   group_by(response, id, month, depth) %>%
   filter(smp==max(smp), td==max(td))
-stages <- c("canopy", "recruits", "subcanopy")
-stages_ord <- c("canopy", "subcanopy", "recruits")
+stages <- c("can.", "recr.", "subc.")
+stages_ord <- c("can.", "subc.", "recr.")
 par.rng <- readRDS(glue("{sens.dir}000_parameter_ranges.rds")) %>%
   mutate(exposure=case_when(exposure=="low"~1, exposure=="high"~2)) 
 sens.param <- tibble(messy=sort(unique(ri.df$var)),
@@ -102,7 +105,7 @@ sens.param <- tibble(messy=sort(unique(ri.df$var)),
                      grp=c("NDD",
                            rep("Growth: Frond", 3),
                            rep("Growth: Stipe", 3),
-                           "Erosion", "Reprod.",
+                           "Erosion", "Repro.",
                            rep("Survival", 3))) %>%
   mutate(eq=paste0("italic(", eq, ")")) %>%
   mutate(eq=factor(eq, 
@@ -124,26 +127,27 @@ grid.long <- st_read("out/processed/grid_long.gpkg")
 fig2a <- map_base.gg +
   geom_sf(data=mass.sum.sf_canopy, 
           colour=NA, aes(fill=logBiomass_mn)) +
-  scale_fill_gradient(expression("ln kg/m"^2), 
+  scale_fill_gradient("Canopy\nbiomass\nmean\n(ln kg/m2)", 
                       low="grey90", high="green4", limits=c(0,NA)) +
   facet_grid(.~depth) + 
   pub_theme +
-  theme(legend.position="right") +
-  ggtitle("July canopy biomass mean")
+  theme(legend.position="right",
+        legend.key.width=unit(0.2, "cm"))
 fig2b <- map_base.gg +
   geom_sf(data=mass.sum.sf_canopy, 
           colour=NA, aes(fill=logBiomass_sd)) +
-  scale_fill_viridis_c(expression("ln kg/m"^2), limits=c(0, NA)) +
+  scale_fill_viridis_c("Canopy\nbiomass\nstd. dev.\n(ln kg/m2)", 
+                       limits=c(0, NA)) +
   facet_grid(.~depth) + 
   pub_theme +
-  theme(legend.position="right") +
-  ggtitle("July canopy biomass standard deviation among years")
+  theme(legend.position="right",
+        legend.key.width=unit(0.2, "cm"))
 ggsave(glue("{fig.dir}Fig_2.png"), 
        ggarrange(fig2a, fig2b, ncol=1, labels="auto"),
-       width=8, height=5.75, dpi=300)
+       width=190, height=120, dpi=300, units="mm")
 ggsave(glue("{fig.dir}Fig_2.pdf"), 
        ggarrange(fig2a, fig2b, ncol=1, labels="auto"),
-       width=8, height=5.75, dpi=300)
+       width=190, height=120, dpi=300, units="mm")
 
 
 # Fig 3 -------------------------------------------------------------------
@@ -180,10 +184,10 @@ fig3b <- loss.deciles %>%
 
 ggsave(glue(fig.dir, "Fig_3.png"), 
        ggarrange(fig3a, fig3b, ncol=1, labels="auto", heights=c(0.95, 1)), 
-       width=4, height=7, dpi=300)
+       width=90, height=150, dpi=300, units="mm")
 ggsave(glue(fig.dir, "Fig_3.pdf"), 
        ggarrange(fig3a, fig3b, ncol=1, labels="auto", heights=c(0.95, 1)), 
-       width=4, height=7, dpi=300)
+       width=90, height=150, dpi=300, units="mm")
 
 
 
@@ -197,17 +201,22 @@ fig4 <- b.df_biomass %>% filter(depth %in% c(2,5,10,15)) %>%
   geom_hline(yintercept=0, colour="grey80") +
   geom_ribbon(alpha=0.3, colour=NA) +
   geom_line() +
-  scale_colour_manual("", values=c("grey40", "goldenrod", "red4")) +
-  scale_fill_manual("", values=c("grey40", "goldenrod", "red4")) +
+  scale_colour_manual("Variable", values=c("grey40", "goldenrod", "red4")) +
+  scale_fill_manual("Variable", values=c("grey40", "goldenrod", "red4")) +
   facet_grid(depth~.) + 
   scale_x_continuous(breaks=c(5, 10, 15)) +
   scale_y_continuous(breaks=c(-0.5, 0, 0.5)) +
   pub_theme +
-  theme(legend.position="bottom") +
+  theme(legend.position=c(0.86, 0.05),
+        legend.key.height=unit(0.25, "cm"),
+        legend.key.width=unit(0.25, "cm"),
+        legend.background=element_blank()) +
   labs(x="Lag (years)", 
        y=glue("Effect on biomass\n(standardized slope: median + middle 80%)"))
-ggsave(glue("{fig.dir}Fig_4.png"), fig4, width=3, height=7, dpi=300)
-ggsave(glue("{fig.dir}Fig_4.pdf"), fig4, width=3, height=7, dpi=300)
+ggsave(glue("{fig.dir}Fig_4.png"), fig4,
+       width=90, height=180, dpi=300, units="mm")
+ggsave(glue("{fig.dir}Fig_4.pdf"), fig4, 
+       width=90, height=180, dpi=300, units="mm")
 
 
 
@@ -230,12 +239,12 @@ fig5 <- ri.df %>%
          depth=as.numeric(str_remove(depth, "m")),
          param=sens.param$eq[match(var, sens.param$messy)],
          grp=sens.param$grp[match(var, sens.param$messy)]) %>%
-  mutate(grp=factor(grp, levels=c("Survival", "Reprod.", "Erosion", "NDD",
+  mutate(grp=factor(grp, levels=c("Survival", "Repro.", "Erosion", "NDD",
                                   "Growth: Frond", "Growth: Stipe"))) %>%
   ggplot(aes(param, md, colour=depth, group=as.factor(depth))) +
   geom_hline(yintercept=0, colour="grey90") +
   geom_errorbar(aes(ymin=q10, ymax=q90), position=position_dodge(width=-0.75), width=0.5) +
-  geom_linerange(aes(ymin=q25, ymax=q75), position=position_dodge(width=-0.75), size=1) +
+  geom_linerange(aes(ymin=q25, ymax=q75), position=position_dodge(width=-0.75), linewidth=1) +
   geom_point(position=position_dodge(width=-0.75)) +
   facet_grid(grp~response, scales="free_y", space="free_y", switch="y") + 
   coord_flip() +
@@ -244,20 +253,20 @@ fig5 <- ri.df %>%
   scale_x_discrete(labels=scales::parse_format()) +
   scale_y_continuous(breaks=c(0, 20, 40)) + 
   pub_theme +
-  theme(legend.position=c(0.9, 0.25),
+  theme(legend.position=c(0.86, 0.15),
         legend.key.width=unit(0.2, "cm"),
-        strip.text.x=element_text(size=11), 
-        strip.text.y=element_text(size=10), 
-        plot.title=element_text(size=12)) +
-  labs(y="Relative influence (%)", x="", 
-       title="Canopy biomass sensitivity")
-ggsave(glue("{fig.dir}Fig_5.png"), fig5, width=7, height=7, dpi=300)
-ggsave(glue("{fig.dir}Fig_5.pdf"), fig5, width=7, height=7, dpi=300)
+        legend.key.height=unit(0.4, "cm"),
+        legend.background=element_blank()) +
+  labs(y="Relative influence (%)", x="")
+ggsave(glue("{fig.dir}Fig_5.png"), fig5, 
+       width=90, height=160, dpi=300, units="mm")
+ggsave(glue("{fig.dir}Fig_5.pdf"), fig5,
+       width=90, height=160, dpi=300, units="mm")
 
 
 # Fig 6 -------------------------------------------------------------------
 
-fig6 <- ri.df %>% filter(month=='july') %>% 
+fig6_df <- ri.df %>% filter(month=='july') %>% 
   filter(depth %in% paste0(c(2, 10), "m")) %>%
   filter(response=="biomass_mn") %>%
   group_by(var) %>%
@@ -268,21 +277,20 @@ fig6 <- ri.df %>% filter(month=='july') %>%
                          labels=c("Mean", "Interannual sd")),
          depth=factor(depth, levels=paste0(c(2,5,10,15,20),"m")),
          param=sens.param$eq[match(var, sens.param$messy)]) %>%
-  left_join(grid.sf, .) %>%
-  ggplot(aes(fill=log10(rel.inf*100))) +
-  geom_sf(colour=NA) +
-  scale_fill_viridis_c(expression(log[10](Rel.~Inf.)), option="cividis", limits=c(NA,2)) +
+  left_join(grid.sf, .) 
+fig6 <- map_base.gg + 
+  geom_sf(data=fig6_df, aes(fill=log10(rel.inf*100)), colour=NA) +
+  scale_fill_viridis_c(expression(log[10](Rel.~Inf.)), option="cividis", 
+                       limits=c(NA,2), breaks=c(0,1,2)) +
   pub_theme +
-  theme(legend.position="bottom", legend.key.height=unit(0.2, "cm"),
-        panel.grid=element_blank(),
-        axis.title=element_blank(),
-        axis.text=element_blank()) +
-  scale_x_continuous(breaks=c(-8,0)) +
-  scale_y_continuous(breaks=c(52, 58)) +
+  theme(legend.key.height=unit(0.2, "cm")) +
   facet_grid(depth~param, 
              labeller=labeller(response=label_value, depth=label_value, param=label_parsed))
-ggsave(glue("{fig.dir}/Fig_6.png"), fig6, width=6, height=3.75, dpi=300)
-ggsave(glue("{fig.dir}/Fig_6.pdf"), fig6, width=6, height=3.75, dpi=300)
+ggsave(glue("{fig.dir}/Fig_6.png"), fig6, 
+       width=140, height=87, dpi=300, units="mm")
+ggsave(glue("{fig.dir}/Fig_6.pdf"), fig6, 
+       width=140, height=87, dpi=300, units="mm")
+
 
 ri.df %>% filter(month=='july') %>% 
   group_by(var) %>%
